@@ -1,20 +1,248 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <h1 class="col-md-12">
+      Sistema de Segurança Digital
+    </h1>
+    <br />
+    <br />
+    <br />
+  </div>
+  <form>
+    <div style="outline: 2px solid black; padding: 20px; padding-bottom: 50px;">
+      <div class="row">
+        <h4 class="col-md-12">
+          Pesquisar Sistema
+        </h4>
+        <h6 class="col-md-12" style="color: green">
+          Filtro de Consulta
+        </h6>
+        <div class="col-md-6">
+          <label for="Descrição">Descrição</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Descrição" id="Descrição">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="Sigla">Sigla</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Sigla" id="Sigla">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="E-mail_de_atendimento_do_sistema">E-mail de atendimento do sistema</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Descrição" id="E-mail_de_atendimento_do_sistema">
+        </div>
+      </div>
+    </div>
 
+    <div style="outline: 2px solid black; padding: 20px; padding-bottom: 50px; margin-top: 2px;">
+      <div class="row">
+        <h6 class="col-md-12" style="color: green">
+          Resultado da Consulta
+        </h6>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Descrição</th>
+              <th scope="col">Sigla</th>
+              <th scope="col">E-mail de atendimento</th>
+              <th scope="col">URL</th>
+              <th scope="col">Status</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">ADMINISTRATIVO DO WEB SERVICE</th>
+              <td>WSADMIN</td>
+              <td></td>
+              <td>www.teste.com.br</td>
+              <td>ATIVO</td>
+              <td>
+                <div class="col-md-12"><a href="#"><i class="fa fa-pencil"></i></a></div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">BANCOS DE EXPERIÊNCIAS DE CONSELHOS ESCOLARES</th>
+              <td>SGBECE</td>
+              <td></td>
+              <td>www.teste.com.br</td>
+              <td>ATIVO</td>
+              <td>
+                <div class="col-md-12"><a href="#"><i class="fa fa-pencil"></i></a></div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">CENSO ESCOLAR WEB</th>
+              <td>CENSOWEB</td>
+              <td></td>
+              <td>www.teste.com.br</td>
+              <td>CANCELADO</td>
+              <td>
+                <div class="col-md-12"><a href="#"><i class="fa fa-pencil"></i></a></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <br />
+    <div class="buttons" style="padding-bottom: 50px">
+      <button type="button" class="btn btn-success col-md-3 float-md-right">Novo Sistema&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></button>
+      <button type="button" class="btn btn-success col-md-3 float-md-right">Limpar&nbsp;&nbsp;<i class="fa fa-minus-square"></i></button>
+      <button type="button" class="btn btn-success col-md-3 float-md-right">Pesquisar&nbsp;&nbsp;<i class="fa fa-search"></i></button>
+    </div>
+  </form>
+
+  <form>
+    <div style="outline: 2px solid black; padding: 20px; padding-bottom: 50px;">
+      <div class="row">
+        <h4 class="col-md-12">
+          Manter Sistema
+        </h4>
+        <h6 class="col-md-12" style="color: green">
+          Dados do Sistema
+        </h6>
+        <div class="col-md-6">
+          <label for="Descrição">Descrição</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Descrição" id="Descrição">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="Sigla">Sigla</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Sigla" id="Sigla">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="E-mail_de_atendimento_do_sistema">E-mail de atendimento do sistema</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Descrição" id="E-mail_de_atendimento_do_sistema">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="URL">URL</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="URL" id="URL">
+        </div>
+      </div>
+    </div>
+    <div class="buttons" style="padding-bottom: 50px; padding-top: 20px;">
+      <button type="button" class="btn btn-success col-md-3 float-md-left">Voltar&nbsp;&nbsp;<i class="fa fa-arrow-left"></i></button>
+      <button type="button" class="btn btn-success col-md-3 float-md-right">Salvar&nbsp;&nbsp;<i class="fa fa-save"></i></button>
+    </div>
+  </form>
+
+  <form>
+    <div style="outline: 2px solid black; padding: 20px; padding-bottom: 50px;">
+      <div class="row">
+        <h4 class="col-md-12">
+          Manter Sistema
+        </h4>
+        <h6 class="col-md-12" style="color: green">
+          Dados do Sistema
+        </h6>
+        <div class="col-md-6">
+          <label for="Descrição">Descrição</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Descrição" id="Descrição" disabled="true" value="Teste">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="Sigla">Sigla</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Sigla" id="Sigla" disabled="true" value="Teste">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="E-mail_de_atendimento_do_sistema">E-mail de atendimento do sistema</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Descrição" id="E-mail_de_atendimento_do_sistema" disabled="true" value="Teste">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="URL">URL</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="URL" id="URL">
+        </div>
+      </div>
+    </div>
+    <div style="outline: 2px solid black; padding: 20px; padding-bottom: 50px;">
+      <div class="row">
+        <h6 class="col-md-12" style="color: green">
+          Controle do Sistema - Atualizar Dados
+        </h6>
+        <div class="col-md-6">
+          <label for="Status">Status</label>
+        </div>
+        <div class="col-md-6">
+          <select class="custom-select" id="Status" disabled="true">
+            <option selected>Opção Padrão Selecionada</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="Usuario_Responsavel_Pela_Ultima_Alteracao">Usuário Responsável pela Última Alteração</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Usuario_Responsavel_Pela_Ultima_Alteracao" id="Usuario_Responsavel_Pela_Ultima_Alteracao" disabled="true" value="Usuário">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="Data_da_Ultima_Alteracao">Data da Última Alteração</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" maxlength="100" name="Data_da_Ultima_Alteracao" id="Data_da_Ultima_Alteracao" disabled="true" value="2012-09-13 00:00:00">
+        </div>
+        <br />
+        <br />
+        <div class="col-md-6">
+          <label for="Justificativa_da_Ultima_Alteracao">Justificativa da Última Alteração</label>
+        </div>
+        <div class="col-md-6">
+          <textarea rows="5" cols="40" maxlength="100" name="Justificativa_da_Ultima_Alteracao" id="Justificativa_da_Ultima_Alteracao" disabled="true">
+          </textarea>
+        </div>
+        <div class="col-md-6">
+          <label for="Nova_Justificativa_de_Alteracao">Justificativa da Última Alteração</label>
+        </div>
+        <div class="col-md-6">
+          <textarea rows="5" cols="40" maxlength="100" name="Nova_Justificativa_de_Alteracao" id="Nova_Justificativa_de_Alteracao">
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <div class="buttons" style="padding-bottom: 50px; padding-top: 20px;">
+      <button type="button" class="btn btn-success col-md-3 float-md-left">Voltar&nbsp;&nbsp;<i class="fa fa-arrow-left"></i></button>
+      <button type="button" class="btn btn-success col-md-3 float-md-right">Salvar&nbsp;&nbsp;<i class="fa fa-save"></i></button>
+    </div>
+  </form>
+  
+</div>

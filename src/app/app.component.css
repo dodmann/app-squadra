@@ -1,0 +1,9 @@
+input{
+    min-width: 300px;
+    border-left: 4px solid black;
+}
+
+div.buttons > button[type=button]{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
